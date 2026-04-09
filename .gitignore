@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files (To keep repository size small and avoid push failures)
+data/
+*.csv
+*.db
+*.sqlite3
+
+# Streamlit specific
+.streamlit/
+secrets.toml
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
