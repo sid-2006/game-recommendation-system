@@ -3,9 +3,21 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Data files (To keep repository size small and avoid push failures)
+# Data files
+# We only un-ignore the files strictly required by the app to stay within GitHub limits.
 data/
-*.csv
+!data/cleaned_steam.csv
+!data/cleaned_user_interactions.csv
+!data/steam_media_data.csv
+
+# Keep large/original source data ignored
+data/steam_description_data.csv
+data/steam.csv
+data/steamspy_tag_data.csv
+data/steam-200k.csv
+data/steam_requirements_data.csv
+data/steam_support_info.csv
+
 *.db
 *.sqlite3
 

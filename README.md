@@ -60,3 +60,21 @@ An advanced, production-ready Game Recommendation System built with Python, Stre
 The system implements offline model validation utilizing holdout samples. 
 * Evaluated strictly on `Precision@10` and `Recall@10`.
 * The **Hybrid model** objectively outperforms isolated Content or Collaborative models by efficiently handling both historical player data constraints and semantic text relationships.
+
+## 🚀 Deployment (Streamlit Cloud)
+
+To deploy this application to the web:
+
+1. **GitHub Setup**: Push this repository to a new GitHub repository.
+2. **Include Data**: Ensure the required CSV files are pushed (the `.gitignore` has been pre-configured for this).
+   ```bash
+   git add data/cleaned_steam.csv data/cleaned_user_interactions.csv data/steam_media_data.csv
+   git commit -m "Add required data for deployment"
+   git push origin main
+   ```
+3. **Connect to Streamlit**:
+   - Go to [Streamlit Community Cloud](https://share.streamlit.io/).
+   - Click "New app" and select your repository.
+   - Set the Main file path to `app.py`.
+   - Click **Deploy**.
+   - Your app will be live at a public URL!
