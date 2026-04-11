@@ -5,7 +5,7 @@ __pycache__/
 
 # Data files
 # We only un-ignore the files strictly required by the app to stay within GitHub limits.
-data/
+data/*
 !data/cleaned_steam.csv
 !data/cleaned_user_interactions.csv
 !data/steam_media_data.csv
